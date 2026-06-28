@@ -1,0 +1,2292 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ==================================================
+   01. TIPOGRAFÍAS LOCALES
+   Carga de fuentes almacenadas dentro del proyecto
+================================================== */
+
+@font-face{
+	font-family:'PT Sans Narrow';
+	src:url("../../multimedia/tipografias/PTSansNarrow-Regular.ttf");
+	font-display:swap;
+}
+
+@font-face{
+	font-family:'PT Sans Narrow Bold';
+	src:url("../../multimedia/tipografias/PTSansNarrow-Bold.ttf");
+	font-display:swap;
+}
+
+@font-face{
+	font-family:'Oxygen';
+	src:url("../../multimedia/tipografias/Oxygen-Regular.ttf");
+	font-display:swap;
+}
+
+@font-face{
+	font-family:'Oxygen Bold';
+	src:url("../../multimedia/tipografias/Oxygen-Bold.ttf");
+	font-display:swap;
+}
+
+@font-face{
+	font-family:'Roboto';
+	src:url("../../multimedia/tipografias/Roboto-Regular.ttf");
+	font-display:swap;
+}
+
+@font-face{
+	font-family:'Roboto Medium';
+	src:url("../../multimedia/tipografias/Roboto-Medium.ttf");
+	font-display:swap;
+}
+
+@font-face{
+	font-family:'Roboto Light';
+	src:url("../../multimedia/tipografias/Roboto-Light.ttf");
+	font-display:swap;
+}
+
+
+
+/* ==================================================
+   02. TIPOGRAFÍAS
+   Jerarquía tipográfica global del sitio
+================================================== */
+
+.display{
+
+	font-family:'PT Sans Narrow Bold', sans-serif;
+	font-size:56px;
+}
+
+h1{
+
+	font-family:'Oxygen Bold', sans-serif;
+	font-size:36px;
+}
+
+h2{
+
+	font-family:'Oxygen', sans-serif;
+	font-size:28px;
+}
+
+.intro{
+
+	font-family:'Roboto Medium', sans-serif;
+	font-size:22px;
+}
+
+.body-text{
+
+	font-family:'Roboto', sans-serif;
+	font-size:18px;
+}
+
+.small-text{
+
+	font-family:'Roboto Light', sans-serif;
+	font-size:14px;
+}
+
+
+/* ==================================================
+   03. ESPACIADOS
+   Márgenes reutilizables entre componentes
+================================================== */
+
+.mt-display{
+
+	margin-bottom:32px;
+}
+
+.mt-h1{
+
+	margin-bottom:24px;
+}
+
+.mt-intro{
+
+	margin-bottom:20px;
+}
+
+.mt-h2,
+.hero-support{
+
+	margin-bottom:16px;
+}
+
+
+/* ==================================================
+   04. COLORES
+   Clases reutilizables para fondos y textos
+================================================== */
+
+/* Fondos */
+
+.bg-fondo{
+	background-color:#FAF8F5;
+}
+
+.bg-blanco{
+	background-color:#FFFFFF;
+}
+
+.bg-secundario{
+	background-color:#E9E4DC;
+}
+
+.bg-azul{
+	background-color:#1F2937;
+}
+
+.bg-acento{
+	background-color:#D32F2F;
+}
+
+
+/* Textos */
+
+.text-negro{
+	color:#000000;
+}
+
+.text-blanco{
+	color:#FFFFFF;
+}
+
+.text-azul{
+	color:#1F2937;
+}
+
+.text-acento{
+	color:#D32F2F;
+}
+
+
+/* ==================================================
+   05. RESET GENERAL
+   Restablece los estilos predeterminados del navegador
+================================================== */
+
+*,
+*::before,
+*::after{
+
+	margin:0;
+	padding:0;
+
+	box-sizing:border-box;
+}
+
+
+/* ==================================================
+   06. BORDES REDONDEADOS
+   Clases reutilizables para componentes
+================================================== */
+
+.radius-small{
+
+	border-radius:8px;
+}
+
+.radius-medium{
+
+	border-radius:12px;
+}
+
+.radius-large{
+
+	border-radius:20px;
+}
+
+.radius-pill{
+
+	border-radius:999px;
+}
+
+.radius-circle{
+
+	border-radius:50%;
+}
+
+
+/* ==================================================
+   07. CONFIGURACIÓN GENERAL
+================================================== */
+
+html{
+
+	scroll-behavior:smooth;
+}
+
+body{
+
+	font-family:'Roboto', sans-serif;
+
+	background-color:#FAF8F5;
+
+	color:#1F2937;
+
+	line-height:1.6;
+}
+
+
+/* ==================================================
+   08. CONTENEDORES
+================================================== */
+
+.container{
+
+	width:90%;
+
+	max-width:1200px;
+
+	margin:0 auto;
+}
+ 
+
+/* ==================================================
+   09. ENLACES
+================================================== */
+
+a{
+
+	text-decoration:none;
+
+	color:inherit;
+
+	transition:.3s ease;
+}
+
+a:hover{
+
+	opacity:.8;
+}
+
+
+/* ==================================================
+   10. BOTONES
+================================================== */
+
+.btn-primary,
+.btn-secondary{
+
+	padding:12px 24px;
+
+	border:none;
+
+	cursor:pointer;
+
+	transition:.3s ease;
+}
+
+
+/* ==================================================
+   11. IMÁGENES
+================================================== */
+
+img{
+
+	display:block;
+
+	width:100%;
+
+	max-width:100%;
+
+	height:auto;
+}
+
+
+/* ==================================================
+   12. MENÚ PRINCIPAL
+   Barra superior de navegación
+================================================== */
+
+nav{
+
+	display:flex;
+
+	justify-content:space-between;
+
+	align-items:center;
+
+	padding:24px 48px;
+
+	background-color:#FFFFFF;
+}
+
+
+.nav-logo,
+.nav-links{
+
+	display:flex;
+
+	align-items:center;
+}
+
+
+.nav-logo{
+
+	gap:16px;
+}
+
+.nav-logo img {
+	width: 25%;
+}
+
+.nav-links{
+
+	gap:32px;
+}
+
+
+.nav-links a{
+
+	font-size:14px;
+
+	color:#1F2937;
+}
+
+
+.nav-menu{
+
+	display:none;
+}
+
+
+.material-symbols-outlined{
+
+	font-size:32px;
+
+	color:#1F2937;
+
+	cursor:pointer;
+}
+
+
+/* ==================================================
+   13. HERO PRINCIPAL
+   Encabezado principal de la página de inicio
+================================================== */
+
+header{
+
+	background-color:#E9E4DC;
+
+	padding:80px 0;
+}
+
+
+header .container{
+
+	display:flex;
+
+	align-items:center;
+
+	justify-content:space-between;
+
+	gap:60px;
+}
+
+
+header div,
+header img{
+
+	flex:1;
+}
+
+
+header img{
+
+	max-width:500px;
+
+	width:100%;
+
+	height:auto;
+}
+
+
+header h1{
+
+	font-family:'Oxygen Bold', sans-serif;
+
+	font-size:36px;
+
+	color:#1F2937;
+
+	margin-bottom:24px;
+}
+
+
+header p{
+
+	font-family:'Roboto Medium', sans-serif;
+
+	font-size:22px;
+
+	color:#1F2937;
+
+	margin-bottom:20px;
+}
+
+
+/* ==========================
+   Buscador
+========================== */
+
+.search-box{
+
+	display:flex;
+
+	align-items:center;
+
+	gap:16px;
+
+	width:100%;
+
+	max-width:600px;
+
+	height:52px;
+
+	padding:8px 24px;
+
+	background:#FFFFFF;
+
+	border-radius:999px;
+}
+
+
+.search-box input{
+
+	flex:1;
+
+	height:100%;
+
+	margin:0;
+
+	padding:0;
+
+	border:none;
+
+	outline:none;
+
+	background:none;
+
+	font-family:'Roboto', sans-serif;
+
+	font-size:18px;
+
+	color:#1F2937;
+}
+
+
+.search-box input::placeholder{
+
+	font-family:'Roboto', sans-serif;
+
+	color:#7A7A7A;
+
+	line-height:52px;
+}
+
+
+.search-box .material-symbols-outlined{
+
+	flex-shrink:0;
+
+	font-size:24px;
+
+	color:#7A7A7A;
+}
+
+
+/* ==================================================
+   14. PIE DE PÁGINA
+   Información secundaria y navegación complementaria
+================================================== */
+
+footer{
+
+	background-color:#1F2937;
+
+	padding:32px 0;
+}
+
+
+footer .container{
+
+	display:flex;
+
+	flex-direction:column;
+
+	align-items:center;
+
+	gap:16px;
+}
+
+
+.footer-copy{
+
+	margin-bottom:10px;
+
+	font-family:'Roboto Medium', sans-serif;
+
+	font-size:16px;
+
+	color:#FAF8F5;
+}
+
+
+.footer-links{
+
+	display:flex;
+
+	flex-wrap:wrap;
+
+	justify-content:center;
+
+	gap:32px;
+}
+
+
+.footer-links a{
+
+	font-size:16px;
+
+	color:#FAF8F5;
+}
+
+
+.footer-links a:hover{
+
+	color:#D32F2F;
+}
+
+
+/* ==================================================
+   15. MENÚ MÓVIL
+   Navegación para dispositivos móviles
+================================================== */
+
+.mobile-menu{
+
+	position:fixed;
+
+	inset:0;
+
+	display:flex;
+
+	flex-direction:column;
+
+	justify-content:center;
+
+	align-items:center;
+
+	gap:24px;
+
+	background:rgba(31,41,55,.65);
+
+	backdrop-filter:blur(12px);
+
+	opacity:0;
+
+	visibility:hidden;
+
+	transition:.3s ease;
+
+	z-index:999;
+}
+
+
+.mobile-menu.active{
+
+	opacity:1;
+
+	visibility:visible;
+}
+
+
+.mobile-menu a{
+
+	font-family:'Oxygen Bold', sans-serif;
+
+	font-size:28px;
+
+	color:#FAF8F5;
+}
+
+
+.btn-close{
+
+	margin-top:40px;
+
+	padding:12px 32px;
+
+	border:none;
+
+	border-radius:999px;
+
+	background:#D32F2F;
+
+	color:#FFFFFF;
+
+	font-family:'Roboto Medium', sans-serif;
+
+	font-size:16px;
+
+	cursor:pointer;
+
+	transition:.3s ease;
+}
+
+
+/* ==================================================
+   16. TEMAS PRINCIPALES
+================================================== */
+
+.topics{
+
+	padding:80px 0;
+}
+
+
+.topics h2{
+
+	margin-bottom:8px;
+}
+
+
+.topics > .container > p,
+.topics-intro{
+
+	margin-top:8px;
+
+	margin-bottom:40px;
+
+	font-size:18px;
+
+	color:#666666;
+}
+
+
+.topics-grid{
+
+	display:grid;
+
+	grid-template-columns:repeat(4,1fr);
+
+	gap:24px;
+}
+
+
+.topic-card{
+
+	display:flex;
+
+	flex-direction:column;
+
+	min-height:240px;
+
+	padding:24px;
+
+	background:#E9E4DC;
+
+	border-radius:20px;
+
+	transition:.3s ease;
+}
+
+
+.topic-card:hover{
+
+	transform:translateY(-4px);
+}
+
+
+.topic-icon{
+
+	width:72px;
+
+	height:72px;
+
+	margin-bottom:24px;
+
+	border-radius:50%;
+}
+
+
+.topic-card h3{
+
+	display:flex;
+
+	align-items:flex-start;
+
+	gap:8px;
+
+	margin-bottom:16px;
+
+	font-family:'Oxygen Bold', sans-serif;
+
+	font-size:18px;
+
+	line-height:1.4;
+}
+
+
+.topic-card h3 .material-symbols-outlined{
+
+	flex-shrink:0;
+
+	font-size:22px;
+}
+
+
+.topic-card p{
+
+	flex-grow:1;
+
+	font-size:16px;
+
+	line-height:1.6;
+}
+
+
+.topic-card a{
+
+	display:flex;
+
+	justify-content:flex-end;
+
+	align-items:center;
+
+	gap:4px;
+
+	margin-top:24px;
+
+	font-family:'Roboto Medium', sans-serif;
+
+	font-size:14px;
+
+	color:#D32F2F;
+}
+
+
+.topic-card a .material-symbols-outlined{
+
+	font-size:18px;
+}
+
+
+/* ==================================================
+   17. ARTÍCULOS POPULARES
+================================================== */
+
+.articles{
+
+	padding:80px 0;
+}
+
+
+.articles-intro{
+
+	margin-top:8px;
+
+	margin-bottom:40px;
+
+	font-size:18px;
+
+	color:#666666;
+}
+
+
+.articles-grid{
+
+	display:grid;
+
+	grid-template-columns:repeat(4,1fr);
+
+	gap:24px;
+}
+
+
+.article-card{
+
+	display:flex;
+
+	flex-direction:column;
+
+	overflow:hidden;
+
+	background:#FFFFFF;
+
+	border:1px solid #E9E4DC;
+
+	border-radius:20px;
+
+	transition:.3s ease;
+}
+
+
+.article-card:hover{
+
+	transform:translateY(-4px);
+}
+
+
+.article-card img{
+
+	width:100%;
+
+	height:220px;
+
+	object-fit:cover;
+
+	background:#E9E4DC;
+}
+
+
+.article-content{
+
+	display:flex;
+
+	flex-direction:column;
+
+	flex-grow:1;
+
+	padding:20px;
+}
+
+
+.article-content h3{
+
+	margin-bottom:12px;
+
+	font-family:'Oxygen Bold', sans-serif;
+
+	font-size:24px;
+
+	line-height:1.4;
+}
+
+
+.article-meta{
+
+	margin-bottom:16px;
+
+	font-size:14px;
+
+	color:#666666;
+}
+
+
+.article-content a{
+
+	display:flex;
+
+	align-items:center;
+
+	gap:4px;
+
+	margin-top:auto;
+
+	font-family:'Roboto Medium', sans-serif;
+
+	font-size:14px;
+
+	color:#D32F2F;
+}
+
+
+/* ==================================================
+   000. HERO BANNER ARTICLE
+================================================== */
+
+.page-hero{
+	
+	background-image: url("../../multimedia/imagenes/contenidos/img_0006_e1p5.png");
+	
+	background-position: center center;
+	
+	background-repeat: repeat-x;
+	
+	background-size: contain;
+	
+}
+
+
+/* ==================================================
+   18. ÍNDICE DE NAVEGACIÓN
+================================================== */
+
+.section-index{
+
+	padding:80px 0;
+}
+
+
+.section-index-grid{
+
+	display:grid;
+
+	grid-template-columns:repeat(4,1fr);
+
+	gap:32px;
+}
+
+
+.index-card{
+
+	display:flex;
+
+	flex-direction:column;
+
+	overflow:hidden;
+
+	background:#FFFFFF;
+
+	border:1px solid #E9E4DC;
+
+	border-radius:20px;
+
+	color:#1F2937;
+
+	text-decoration:none;
+
+	transition:.3s ease;
+}
+
+
+.index-card:hover{
+
+	transform:translateY(-4px);
+}
+
+
+.index-card img{
+
+	width:100%;
+
+	height:260px;
+
+	object-fit:cover;
+
+	background:#E9E4DC;
+}
+
+
+.index-card-content{
+
+	display:flex;
+
+	flex-direction:column;
+
+	align-items:center;
+
+	justify-content:center;
+
+	gap:16px;
+
+	min-height:140px;
+
+	padding:24px;
+}
+
+
+.index-card-content h3{
+
+	font-family:'Oxygen Bold', sans-serif;
+
+	font-size:20px;
+
+	line-height:1.2;
+
+	text-align:center;
+}
+
+
+.index-card-content .material-symbols-outlined{
+
+	font-size:40px;
+
+	color:#1F2937;
+}
+
+
+/* ==================================================
+   19. CONCEPTOS BÁSICOS
+================================================== */
+
+.concepts{
+
+	padding:30px 0;
+
+	background:#F7F6F2;
+}
+
+
+.concepts h2{
+
+	margin-bottom:16px;
+
+	font-size:28px;
+
+	font-weight:700;
+
+	line-height:1.2;
+
+	color:#1F2937;
+}
+
+
+.section-intro{
+
+	max-width:800px;
+
+	margin-bottom:80px;
+
+	font-size:18px;
+
+	line-height:1.8;
+
+	color:#4B5563;
+}
+
+
+.concept-block{
+
+	display:flex;
+
+	align-items:stretch;
+
+	overflow:hidden;
+
+	margin-bottom:40px;
+
+	background:#FFFFFF;
+
+	border-radius:24px;
+}
+
+
+.concept-block.reverse{
+
+	flex-direction:row-reverse;
+}
+
+
+.concept-image{
+
+	display:flex;
+
+	align-items:center;
+
+	justify-content:center;
+
+	flex:.9;
+
+	min-height:420px;
+
+	background:#E5E7EB;
+}
+
+
+.concept-image img{
+
+	display:block;
+
+	width:100%;
+
+	height:100%;
+
+	min-height:420px;
+
+	object-fit:cover;
+}
+
+
+.concept-content{
+
+	display:flex;
+
+	flex:1;
+
+	flex-direction:column;
+
+	justify-content:center;
+
+	padding:60px;
+}
+
+
+.concept-content h3{
+
+	margin-bottom:24px;
+
+	font-size:32px;
+
+	color:#1F2937;
+}
+
+
+.concept-content p{
+
+	font-size:18px;
+
+	line-height:1.8;
+
+	color:#4B5563;
+}
+
+
+/* ==================================================
+   20. BOTONES FLOTANTES
+================================================== */
+
+.floating-buttons{
+
+	position:fixed;
+
+	right:24px;
+
+	bottom:24px;
+
+	display:flex;
+
+	flex-direction:column;
+
+	gap:16px;
+
+	z-index:999;
+}
+
+.back-to-top{
+
+	display:flex;
+
+	align-items:center;
+
+	justify-content:center;
+
+	width:56px;
+
+	height:56px;
+
+	background:#D32F2F;
+
+	border-radius:16px;
+
+	text-decoration:none;
+
+	box-shadow:0 8px 20px rgba(211,47,47,.28);
+
+	transition:
+		transform .30s ease,
+		background .30s ease,
+		box-shadow .30s ease;
+}
+
+.back-to-top:hover{
+
+	background:#C62828;
+
+	box-shadow:0 12px 30px rgba(211,47,47,.35);
+}
+
+.back-to-top .material-symbols-outlined{
+
+	font-size:30px;
+
+	color:#FFFFFF !important;
+
+	font-variation-settings:
+	'FILL' 0,
+	'wght' 400,
+	'GRAD' 0,
+	'opsz' 48;
+
+	transition:transform .30s ease;
+}
+
+.floating-buttons a:first-child:hover{
+
+	transform:scale(1.10);
+}
+
+.floating-buttons a:first-child:hover .material-symbols-outlined{
+
+	transform:scale(1.10);
+}
+
+.floating-buttons a:last-child:hover{
+
+	transform:translateY(-6px);
+}
+
+.floating-buttons a:last-child:hover .material-symbols-outlined{
+
+	transform:translateY(-5px) scaleY(1.25);
+}
+
+
+/* ==================================================
+   21. CASOS DE USO
+================================================== */
+
+.examples{
+
+	padding:30px 0;
+
+	background:#F7F6F2;
+}
+
+.examples h2{
+
+	font-size:28px;
+
+	line-height:1.2;
+
+	font-weight:700;
+
+	margin-bottom:16px;
+
+	color:#1F2937;
+}
+
+.examples p{
+
+	max-width:800px;
+
+	font-size:18px;
+
+	line-height:1.8;
+
+	color:#4B5563;
+
+	margin-bottom:40px;
+}
+
+.examples-tabs{
+
+	display:flex;
+
+	margin-top:48px;
+
+	border-radius:16px 16px 0 0;
+
+	overflow:hidden;
+}
+
+.tab-btn{
+
+	flex:1;
+
+	padding:18px;
+
+	border:none;
+
+	cursor:pointer;
+
+	background:#FFFFFF;
+
+	font-size:16px;
+
+	font-weight:600;
+
+	color:#4B5563;
+
+	border-bottom:2px solid #E5E7EB;
+
+	transition:
+		background .30s ease,
+		color .30s ease;
+}
+
+.tab-btn.active{
+
+	background:#EF4444;
+
+	color:#FFFFFF;
+}
+
+.case-content{
+
+	display:none;
+
+	padding:40px;
+
+	background:#FFFFFF;
+
+	border-radius:0 0 24px 24px;
+}
+
+.case-content.active{
+
+	display:block;
+}
+
+.case-card{
+
+	padding:28px;
+
+	border:1px solid #E5E7EB;
+
+	border-radius:20px;
+}
+
+.case-card:not(:last-child){
+
+	margin-bottom:24px;
+}
+
+.case-card h3{
+
+	display:flex;
+
+	align-items:center;
+
+	gap:12px;
+
+	margin-bottom:16px;
+
+	font-size:24px;
+
+	line-height:1.3;
+
+	color:#1F2937;
+}
+
+.case-card p{
+
+	margin:0;
+
+	font-size:18px;
+
+	line-height:1.8;
+
+	color:#4B5563;
+}
+
+.case-card .material-symbols-outlined{
+
+	font-size:28px;
+
+	color:#EF4444;
+}
+
+
+/* ==================================================
+   22. RECURSOS AUDIOVISUALES
+================================================== */
+
+.video-section{
+
+	padding:100px 0;
+}
+
+.video-grid{
+
+	display:grid;
+
+	grid-template-columns:repeat(2,1fr);
+
+	gap:32px;
+
+	margin-top:48px;
+}
+
+.video-card{
+
+	background:#FFFFFF;
+
+	border-radius:24px;
+
+	overflow:hidden;
+
+	cursor:pointer;
+
+	box-shadow:0 4px 12px rgba(0,0,0,.05);
+
+	transition:
+		transform .30s ease,
+		box-shadow .30s ease;
+}
+
+.video-card:hover{
+
+	transform:translateY(-6px);
+
+	box-shadow:0 12px 28px rgba(0,0,0,.08);
+}
+
+.video-thumb{
+
+	position:relative;
+}
+
+.video-thumb img{
+
+	display:block;
+
+	width:100%;
+
+	height:260px;
+
+	object-fit:cover;
+}
+
+.play-icon{
+
+	position:absolute;
+
+	top:50%;
+
+	left:50%;
+
+	transform:translate(-50%,-50%);
+
+	font-size:72px;
+
+	color:#FFFFFF;
+
+	text-shadow:0 4px 12px rgba(0,0,0,.35);
+}
+
+.video-info{
+
+	padding:24px;
+}
+
+.video-info h3{
+
+	font-size:24px;
+
+	margin-bottom:12px;
+
+	color:#1F2937;
+}
+
+.video-info p{
+
+	font-size:16px;
+
+	line-height:1.7;
+
+	color:#4B5563;
+}
+
+.video-modal{
+
+	position:fixed;
+
+	inset:0;
+
+	display:none;
+
+	align-items:center;
+
+	justify-content:center;
+
+	padding:24px;
+
+	background:rgba(15,23,42,.75);
+
+	backdrop-filter:blur(10px);
+
+	z-index:9999;
+}
+
+.video-modal.active{
+
+	display:flex;
+}
+
+.video-wrapper{
+
+	position:relative;
+
+	width:min(100%,1000px);
+
+	aspect-ratio:16/9;
+}
+
+.video-wrapper iframe{
+
+	display:block;
+
+	width:100%;
+
+	height:100%;
+
+	border:none;
+
+	border-radius:24px;
+
+	background:#000;
+}
+
+.close-video{
+
+	position:absolute;
+
+	top:-60px;
+
+	right:0;
+
+	display:flex;
+
+	align-items:center;
+
+	justify-content:center;
+
+	width:48px;
+
+	height:48px;
+
+	border:none;
+
+	border-radius:12px;
+
+	background:#D32F2F;
+
+	color:#FFFFFF;
+
+	cursor:pointer;
+
+	transition:background .30s ease;
+}
+
+.close-video:hover{
+
+	background:#B71C1C;
+}
+
+.close-video span{
+
+	font-size:28px;
+}
+
+
+/* ==================================================
+   23. BIBLIOTECA DIGITAL
+================================================== */
+
+.pdf-library{
+
+	padding:80px 0;
+}
+
+.pdf-intro{
+
+	margin-top:8px;
+
+	margin-bottom:40px;
+
+	font-size:18px;
+
+	color:#666666;
+}
+
+.pdf-grid{
+
+	display:grid;
+
+	grid-template-columns:repeat(2,1fr);
+
+	gap:48px;
+}
+
+.pdf-card{
+
+	display:flex;
+
+	flex-direction:column;
+
+	align-items:center;
+}
+
+.pdf-cover{
+
+	width:280px;
+
+	aspect-ratio:3/4;
+
+	background:#FFFFFF;
+
+	border:1px solid #E9E4DC;
+
+	border-radius:12px;
+
+	overflow:hidden;
+
+	box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+	transition:
+		transform .30s ease,
+		box-shadow .30s ease;
+}
+
+.pdf-card:hover .pdf-cover{
+
+	transform:translateY(-6px);
+
+	box-shadow:0 18px 40px rgba(0,0,0,.12);
+}
+
+.pdf-cover img{
+
+	display:block;
+
+	width:100%;
+
+	height:100%;
+
+	object-fit:cover;
+}
+
+.pdf-content{
+
+	margin-top:24px;
+
+	width:280px;
+
+	text-align:center;
+}
+
+.pdf-content h3{
+
+	margin-bottom:12px;
+
+	font-family:'Oxygen Bold', sans-serif;
+
+	font-size:24px;
+
+	line-height:1.3;
+
+	color:#1F2937;
+}
+
+.pdf-description{
+
+	margin-bottom:24px;
+
+	font-size:16px;
+
+	line-height:1.7;
+
+	color:#666666;
+}
+
+.pdf-download{
+
+	display:inline-flex;
+
+	align-items:center;
+
+	gap:8px;
+
+	padding:12px 22px;
+
+	background:#D32F2F;
+	
+	border: none;
+	
+	cursor: pointer;
+
+	border-radius:999px;
+
+	font-family:'Roboto Medium', sans-serif;
+
+	font-size:15px;
+
+	color:#FFFFFF;
+
+	transition:
+		background .30s ease,
+		transform .30s ease;
+}
+
+.pdf-download:hover{
+
+	background:#B71C1C;
+
+	transform:translateY(-2px);
+
+	box-shadow:0 10px 22px rgba(211,47,47,.28);
+}
+
+.pdf-download .material-symbols-outlined{
+
+	font-size:20px;
+
+	color:#FFFFFF;
+
+	transition:transform .30s ease;
+}
+
+.pdf-download:hover .material-symbols-outlined{
+
+	transform:translateX(3px);
+}
+
+
+/* ==================================================
+   24. CONTACTO
+================================================== */
+
+.contact-header{
+
+	text-align:center;
+
+	margin-bottom:56px;
+}
+
+.contact-header h2{
+
+	margin-bottom:16px;
+}
+
+.contact-header p{
+
+	max-width:760px;
+
+	margin:0 auto;
+
+	font-size:18px;
+
+	line-height:1.8;
+
+	color:#666666;
+}
+
+
+.section-complement{
+	
+	padding-top: 100px;
+
+	padding-bottom:100px;
+}
+
+
+.contact-wrapper{
+
+	display:grid;
+
+	grid-template-columns:1.1fr .9fr;
+
+	gap:64px;
+
+	align-items:center;
+}
+
+
+.contact-form{
+
+	background:#FFFFFF;
+
+	padding:40px;
+
+	border:1px solid #E9E4DC;
+
+	border-radius:24px;
+
+	box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+
+.form-group{
+
+	display:flex;
+
+	flex-direction:column;
+
+	margin-bottom:24px;
+}
+
+
+.form-group label{
+
+	margin-bottom:10px;
+
+	font-family:'Roboto Medium', sans-serif;
+
+	font-size:15px;
+
+	color:#1F2937;
+}
+
+
+.form-group input,
+
+.form-group textarea{
+
+	padding:16px 18px;
+
+	border:1px solid #D9D9D9;
+
+	border-radius:14px;
+
+	font-size:16px;
+
+	font-family:'Roboto', sans-serif;
+
+	background:#FFFFFF;
+
+	transition:
+		border-color .30s ease,
+		box-shadow .30s ease;
+}
+
+
+.form-group input:focus,
+
+.form-group textarea:focus{
+
+	outline:none;
+
+	border-color:#D32F2F;
+
+	box-shadow:0 0 0 4px rgba(211,47,47,.12);
+}
+
+
+.form-group textarea{
+
+	resize:vertical;
+
+	min-height:180px;
+}
+
+
+.contact-info{
+
+	display:grid;
+
+	grid-template-columns:repeat(2,1fr);
+
+	gap:20px;
+
+	margin-top:40px;
+}
+
+
+.info-card{
+
+	padding:24px;
+
+	text-align:center;
+
+	background:#FAF8F5;
+
+	border:1px solid #E9E4DC;
+
+	border-radius:18px;
+}
+
+
+.info-card .material-symbols-outlined{
+
+	margin-bottom:12px;
+
+	font-size:34px;
+
+	color:#D32F2F;
+}
+
+
+.info-card h3{
+
+	margin-bottom:8px;
+
+	font-family:'Oxygen Bold', sans-serif;
+
+	font-size:20px;
+
+	color:#1F2937;
+}
+
+
+.info-card p{
+
+	font-size:15px;
+
+	color:#666666;
+}
+
+
+.contact-image{
+
+	display:flex;
+
+	justify-content:center;
+}
+
+
+.contact-image img{
+
+	width:100%;
+
+	max-width:520px;
+
+	height:auto;
+}
+
+
+/* ==================================================
+   25. PÁGINAS DE CONTENIDO
+================================================== */
+
+.about-content{
+
+	max-width:960px;
+
+	margin:0 auto;
+
+	padding:56px 64px;
+
+	background:#FFFFFF;
+
+	border:1px solid #E9E4DC;
+
+	border-radius:24px;
+
+	box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.about-content p{
+
+	margin:0;
+
+	font-size:19px;
+
+	line-height:2;
+
+	color:#4B5563;
+
+	text-align:justify;
+}
+
+.about-content br{
+
+	display:block;
+
+	content:"";
+
+	margin-bottom:22px;
+}
+
+
+/* ==================================================
+   RESPONSIVE 768 px
+================================================== */
+
+@media (max-width:768px){
+
+	/* ---------- Navegación ---------- */
+
+	.nav-links{
+
+		display:none;
+	}
+
+	.nav-menu{
+
+		display:block;
+	}
+
+
+	/* ---------- Hero ---------- */
+
+	header .container{
+
+		display:flex;
+
+		flex-direction:column;
+
+		align-items:center;
+
+		text-align:center;
+
+		padding:48px 24px;
+	}
+
+	header img{
+
+		max-width:300px;
+	}
+
+	header input{
+
+		max-width:100%;
+	}
+
+
+	/* ---------- Footer ---------- */
+
+	.footer-links{
+
+		gap:16px;
+	}
+
+
+	/* ---------- Topics ---------- */
+
+	.topics-grid{
+
+		grid-template-columns:1fr;
+	}
+
+
+	/* ---------- Índice ---------- */
+
+	.section-index{
+
+		padding:48px 0;
+	}
+
+	.section-index-grid{
+
+		display:flex;
+
+		gap:24px;
+
+		overflow-x:auto;
+
+		padding-bottom:12px;
+
+		scroll-behavior:smooth;
+
+		scroll-snap-type:x proximity;
+	}
+
+	.section-index-grid::-webkit-scrollbar{
+
+		display:none;
+	}
+
+	.index-card{
+
+		flex:0 0 240px;
+
+		min-width:240px;
+	}
+
+	.index-card img{
+
+		height:180px;
+	}
+
+	.index-card-content{
+
+		min-height:120px;
+	}
+
+	.index-card-content h3{
+
+		font-size:18px;
+	}
+
+	.index-card-content .material-symbols-outlined{
+
+		font-size:32px;
+	}
+
+
+	/* ---------- Conceptos ---------- */
+
+	.concepts{
+
+		padding:30px 0;
+	}
+
+	.concepts h2{
+
+		font-size:36px;
+
+		text-align:center;
+	}
+
+	.section-intro{
+
+		font-size:18px;
+
+		text-align:center;
+
+		margin-bottom:50px;
+	}
+
+	.concept-block,
+
+	.concept-block.reverse{
+
+		flex-direction:column;
+	}
+
+	.concept-image img{
+
+		min-height:260px;
+	}
+
+	.concept-content{
+
+		padding:32px;
+
+		text-align:center;
+	}
+
+	.concept-content h3{
+
+		font-size:28px;
+	}
+
+
+	/* ---------- Casos ---------- */
+
+	.examples{
+
+		padding:30px 0;
+	}
+
+	.examples h2{
+
+		font-size:36px;
+
+		text-align:center;
+	}
+
+	.examples p{
+
+		font-size:18px;
+
+		text-align:center;
+
+		margin-bottom:40px;
+	}
+
+	.examples-tabs{
+
+		flex-direction:column;
+	}
+
+	.tab-btn{
+
+		text-align:center;
+	}
+
+	.case-content{
+
+		padding:24px;
+	}
+
+	.case-card{
+
+		padding:24px;
+	}
+
+	.case-card h3{
+
+		font-size:22px;
+	}
+
+	.case-card p{
+
+		font-size:16px;
+	}
+
+
+	/* ---------- Videos ---------- */
+
+	.video-section{
+
+		padding:30px 0;
+	}
+
+	.video-grid{
+
+		grid-template-columns:1fr;
+	}
+
+	.video-thumb img{
+
+		height:220px;
+	}
+
+	.video-info h3{
+
+		font-size:22px;
+	}
+	
+	/* ---------- Contacto ---------- */
+
+	.contact-header{
+
+		margin-bottom:40px;
+	}
+
+	.contact-header h2{
+
+		font-size:36px;
+	}
+
+	.contact-header p{
+
+		font-size:18px;
+	}
+
+	.contact-wrapper{
+
+		grid-template-columns:1fr;
+
+		gap:48px;
+	}
+
+	.contact-form{
+
+		padding:28px;
+	}
+
+	.contact-info{
+
+		grid-template-columns:1fr;
+
+		gap:16px;
+	}
+
+	.contact-image{
+
+		order:-1;
+	}
+
+	.contact-image img{
+
+		max-width:320px;
+	}
+
+}
+
+
+
+/* ==================================================
+   RESPONSIVE 1024 px
+================================================== */
+
+@media (max-width:1024px){
+
+	.topics-grid{
+
+		grid-template-columns:repeat(2,1fr);
+	}
+
+	.articles-grid{
+
+		grid-template-columns:1fr;
+	}
+
+	.article-content h3{
+
+		text-align:center;
+	}
+
+}

@@ -1,0 +1,467 @@
+<!doctype html>
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" >
+	
+	<!--
+       CONFIGURACIÓN GENERAL DEL DOCUMENTO
+       Define la codificación, compatibilidad, adaptación a dispositivos
+       móviles, título del documento y conexión con archivos externos.
+    -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Wiki educativa sobre Diseño de Interacción para estudiantes de Diseño Digital y Comunicación en Medios Digitales.">
+
+    <meta name="keywords" content="Diseño de Interacción, UX, UI, Diseño Digital, UVM, Wiki Educativa">
+
+    <meta name="author" content="Equipo 1 Pareja 5">
+	
+	<title>Wiki E1_P5</title>
+	
+	<!--
+       HOJA DE ESTILOS PRINCIPAL
+       Contiene toda la apariencia visual del sitio web.
+    -->
+    <link rel="stylesheet" href="recursos/css/style.css">
+
+    <!--
+       FAVICON
+       Identidad visual mostrada en la pestaña del navegador.
+    -->
+    <link rel="icon" href="multimedia/iconos/favicon.png" type="image/png">
+	
+</head>
+
+<body>
+	
+	<!--
+       MENÚ PRINCIPAL
+       Contiene la identidad visual de la wiki, acceso al buscador
+       y navegación hacia las principales secciones del sitio.
+    -->
+	<nav>
+
+		<!-- Logo -->
+		<div class="nav-logo">
+			<img src="multimedia/imagenes/inicio/logo.png" alt="logo">
+		</div>
+
+		<!-- Navegación escritorio -->
+		<div class="nav-links">
+			<a href="#">Buscar</a>
+			<a href="acerca_de.html">Acerca de la wiki</a>
+		</div>
+
+		<!-- Menú móvil -->
+		<div class="nav-menu">
+			<span class="material-symbols-outlined">
+				menu
+			</span>
+		</div>
+
+	</nav>
+	
+	<!-- MENÚ MÓVIL -->
+
+	<div class="mobile-menu">
+
+		<a href="#">Buscar</a>
+
+		<a href="acerca_de.html">Acerca de la wiki</a>
+
+		<button class="btn-close">
+			Cerrar
+		</button>
+
+	</div>
+	
+	<!--
+       HERO PRINCIPAL
+       Presenta el objetivo principal de la wiki mediante un título,
+       descripción introductoria, buscador principal e imagen destacada
+       relacionada con el tema de Diseño de Interacción.
+    -->
+	<header>
+		<div class="container">
+			<div class="hero-content">
+				<h1>Tu guía rápida para entender el mundo digital</h1>
+				<p>Conceptos claros y ejemplos prácticos sobre diseño, experiencia de usuario y desarrollo WEB para apoyar tu aprendizaje.</p>
+				<div class="search-box">
+					<input type="search" placeholder="¿Qué tema quieres aprender hoy?">
+					<span class="material-symbols-outlined">
+						search
+					</span>
+					</div>
+				<p class="small-text hero-support">Encuentra información fácil, clara y siempre disponible para ti.</p>
+			</div>
+			<img  src="multimedia/imagenes/inicio/img_0001_e1p5.png" alt="Estudiante diseñando una experiencia digital">
+		</div>
+	</header>
+	
+	<main>
+		<!--
+		   CATEGORÍAS TEMÁTICAS
+		   Muestra las principales áreas de aprendizaje disponibles dentro
+		   de la wiki mediante tarjetas visuales que permiten acceder a los
+		   distintos temas de estudio.
+		-->
+		<section class="topics">
+
+			<div class="container">
+
+				<h2>Explora por tema</h2>
+
+				<p class="topics-intro">
+					Selecciona un área para ver definiciones, guías y recursos relevantes.
+				</p>
+
+				<div class="topics-grid">
+
+					<article class="topic-card">
+
+						<h3>
+							<span class="material-symbols-outlined">
+								account_circle
+							</span>
+							Experiencia de Usuario
+						</h3>
+
+						<p>
+							Conceptos y prácticas para diseñar experiencias digitales intuitivas y memorables.
+						</p>
+
+						<a href="#">
+							Ver tema
+							<span class="material-symbols-outlined">
+								arrow_right_alt
+							</span>
+						</a>
+
+					</article>
+
+					<article class="topic-card">
+
+						<h3>
+							<span class="material-symbols-outlined">
+								desktop_windows
+							</span>
+							Diseño Web
+						</h3>
+
+						<p>
+							Patrones, accesibilidad y buenas prácticas para construir sitios web.
+						</p>
+
+						<a href="#">
+							Ver tema
+							<span class="material-symbols-outlined">
+								arrow_right_alt
+							</span>
+						</a>
+
+					</article>
+
+					<article class="topic-card">
+
+						<h3>
+							<span class="material-symbols-outlined">
+								lightbulb
+							</span>
+							Design Thinking
+						</h3>
+
+						<p>
+							Metodologías para la resolución creativa de problemas centrada en las personas.
+						</p>
+
+						<a href="#">
+							Ver tema
+							<span class="material-symbols-outlined">
+								arrow_right_alt
+							</span>
+						</a>
+
+					</article>
+
+					<article class="topic-card">
+
+						<h3>
+							<span class="material-symbols-outlined">
+								groups
+							</span>
+							Diseño Centrado en el Usuario
+						</h3>
+
+						<p>
+							Técnicas y evaluaciones para mantener al usuario en el centro del proceso de diseño.
+						</p>
+
+						<a href="#">
+							Ver tema
+							<span class="material-symbols-outlined">
+								arrow_right_alt
+							</span>
+						</a>
+
+					</article>
+
+					<article class="topic-card">
+
+						<h3>
+							<span class="material-symbols-outlined">
+								ads_click
+							</span>
+							Diseño de Interacción
+						</h3>
+
+						<p>
+							Principios para diseñar interacciones claras y eficientes entre usuarios y sistemas.
+						</p>
+
+						<a href="diseno_de_interaccion.html">
+							Ver tema
+							<span class="material-symbols-outlined">
+								arrow_right_alt
+							</span>
+						</a>
+
+					</article>
+
+					<article class="topic-card">
+
+						<h3>
+							<span class="material-symbols-outlined">
+								account_tree
+							</span>
+							Arquitectura de la Información
+						</h3>
+
+						<p>
+							Organización de contenido y etiquetado para mejorar la búsqueda y comprensión.
+						</p>
+
+						<a href="#">
+							Ver tema
+							<span class="material-symbols-outlined">
+								arrow_right_alt
+							</span>
+						</a>
+
+					</article>
+
+					<article class="topic-card">
+
+						<h3>
+							<span class="material-symbols-outlined">
+								explore
+							</span>
+							Diseño de Navegación
+						</h3>
+
+						<p>
+							Estrategias para crear sistemas de navegación claros e intuitivos.
+						</p>
+
+						<a href="#">
+							Ver tema
+							<span class="material-symbols-outlined">
+								arrow_right_alt
+							</span>
+						</a>
+
+					</article>
+
+					<article class="topic-card">
+
+						<h3>
+							<span class="material-symbols-outlined">
+								palette
+							</span>
+							Diseño Visual
+						</h3>
+
+						<p>
+							Principios de color, tipografía y composición aplicados al diseño digital.
+						</p>
+
+						<a href="#">
+							Ver tema
+							<span class="material-symbols-outlined">
+								arrow_right_alt
+							</span>
+						</a>
+
+					</article>
+
+				</div>
+
+			</div>
+
+</section>
+
+
+		<!--
+		   ARTÍCULOS DESTACADOS
+		   Presenta los contenidos más consultados por los usuarios para
+		   facilitar el acceso rápido a recursos de aprendizaje relevantes.
+		-->
+		<section class="articles">
+
+			<div class="container">
+
+				<h2>Artículos populares</h2>
+
+				<p class="articles-intro">
+					Lecturas recomendadas para comenzar tu aprendizaje en diseño.
+				</p>
+
+				<div class="articles-grid">
+
+					<article class="article-card">
+
+						<img src="multimedia/imagenes/inicio/img_0002_e1p5.png" alt="Introducción al Design Thinking">
+
+						<div class="article-content">
+
+							<h3>Introducción al Design Thinking</h3>
+
+							<p class="article-meta">
+								Metodología · 8 min de lectura
+							</p>
+
+							<a href="#">
+								Ver tema
+
+								<span class="material-symbols-outlined">
+									arrow_right_alt
+								</span>
+							</a>
+
+						</div>
+
+					</article>
+
+					<article class="article-card">
+
+						<img src="multimedia/imagenes/inicio/img_0003_e1p5.png" alt="Arquitectura de información">
+
+						<div class="article-content">
+
+							<h3>Arquitectura de información para principiantes</h3>
+
+							<p class="article-meta">
+								Arquitectura · 5 min de lectura
+							</p>
+
+							<a href="#">
+								Ver tema
+
+								<span class="material-symbols-outlined">
+									arrow_right_alt
+								</span>
+							</a>
+
+						</div>
+
+					</article>
+
+					<article class="article-card">
+
+						<img src="multimedia/imagenes/inicio/img_0004_e1p5.png" alt="Pruebas de usabilidad">
+
+						<div class="article-content">
+
+							<h3>Técnicas de test de usabilidad</h3>
+
+							<p class="article-meta">
+								Investigación · 6 min de lectura
+							</p>
+
+							<a href="#">
+								Ver tema
+
+								<span class="material-symbols-outlined">
+									arrow_right_alt
+								</span>
+							</a>
+
+						</div>
+
+					</article>
+
+					<article class="article-card">
+
+						<img src="multimedia/imagenes/inicio/img_0005_e1p5.png" alt="Dinámicas de ideación">
+
+						<div class="article-content">
+
+							<h3>Dinámicas de ideación en equipo</h3>
+
+							<p class="article-meta">
+								Creatividad · 4 min de lectura
+							</p>
+
+							<a href="#">
+								Ver tema
+
+								<span class="material-symbols-outlined">
+									arrow_right_alt
+								</span>
+							</a>
+
+						</div>
+
+					</article>
+
+				</div>
+
+			</div>
+
+		</section>
+	</main>
+	
+	<!-- 
+		PIE DE PÁGINA
+       Contiene enlaces secundarios, información institucional,
+       recursos complementarios y acceso a los documentos legales
+       de la plataforma.
+	-->
+	<footer>
+
+		<div class="container">
+
+			<p class="footer-copy">
+				Wiki Diseño Web © 2026
+			</p>
+
+			<div class="footer-links">
+
+				<a href="#">Inicio</a>
+
+				<a href="acerca_de.html">Acerca de</a>
+
+				<a href="contacto.html">Contacto</a>
+
+				<a href="politicas_de_privacidad.html">Privacidad</a>
+
+			</div>
+
+		</div>
+
+	</footer>
+	
+	<!--
+		ARCHIVO PRINCIPAL DE JAVASCRIPT
+		Controla las interacciones y comportamientos dinámicos del sitio.
+	-->
+	
+	<script src="recursos/js/app.js"></script>
+	
+</body>
+</html>
